@@ -16,8 +16,8 @@ import {
 import { LogoutUser } from "@/api/authApi";
 import { logout } from "@/redux/slice/authSlice";
 import { motion } from "framer-motion";
-import Competenest_dark from "../assets/logo/Competenest_dark.png";
-import Competenest_light from "../assets/logo/Competenest_light.png";
+import AlgoArena_dark from "../assets/logo/AlgoArena_dark.png";
+import AlgoArena_light from "../assets/logo/AlgoArena_light.png";
 
 export function Header() {
   const navigate = useNavigate();
@@ -54,9 +54,9 @@ export function Header() {
           >
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent flex items-center">
               <img
-                src={theme === 'light' ? Competenest_light : Competenest_dark}
+                src={theme === 'light' ? AlgoArena_light : AlgoArena_dark}
                 alt="CompeteNest"
-                className="h-9 md:h-12"
+                className="h-10 md:h-12"
               />
             </span>
           </motion.div>

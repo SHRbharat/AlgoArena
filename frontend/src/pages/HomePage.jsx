@@ -6,6 +6,9 @@ import { Github, Linkedin, Mail, CodeXml, Trophy, Medal, Users } from "lucide-re
 import { Button } from "@/components/ui/button";
 import { TypeAnimation } from "react-type-animation";
 import { cn } from "@/lib/utils";
+import Shivam from "../assets/developers/Shivam.png";
+import Somnath from "../assets/developers/Somnath.png";
+import Apoorva from "../assets/developers/Apoorva.png";
 
 // FeatureCard Component
 function FeatureCard({ title, description, icon: Icon }) {
@@ -258,34 +261,41 @@ export function HomePage() {
         </div>
       </AnimatedSection>
 
-      {/* Uncomment if you want to add the TeamMember section */}
-      {/* <AnimatedSection>
+      <AnimatedSection>
         <section className="p-2 text-center relative">
           <h2 className="text-4xl font-bold mb-10 md:mb-16 inline-block relative font-mono">
             <span className="bg-gradient-to-r from-primary to-primary dark:from-primary dark:to-white bg-clip-text text-transparent">
               Meet the "Developers"
             </span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
             <TeamMember
-              name="Dinesh Kumar"
-              role="Lead Developer"
+              name="Shivam Ray"
+              role="Full Stack Developer"
               intro="Bridging the gap between elegant user experiences and powerful backend systems."
-              github="https://github.com/DineshK3012/"
-              linkedin="https://www.linkedin.com/in/dinesh-kumar-06ab741ba/"
-              image={Dinesh}
+              github="https://github.com/SHRbharat"
+              linkedin="https://www.linkedin.com/in/shivam-ray-b4306524a"
+              image={Shivam}
             />
             <TeamMember
-              name="Nakul Gupta"
-              role="Lead Developer"
+              name="Somnath Dwivewdi"
+              role="Full Stack Developer"
               intro="Engineering full-stack solutions with scalable backends and seamless frontends."
-              github="https://github.com/nakul2207"
-              linkedin="https://www.linkedin.com/in/nakul-gupta-321893203/"
-              image={Nakul}
+              github="https://github.com/Somnathdwivedi"
+              linkedin="https://www.linkedin.com/in/somnath-dwivedi"
+              image={Somnath}
+            />
+            <TeamMember
+              name="Apoorva Sharma"
+              role="Frontend Developer"
+              intro="Crafting intuitive user interfaces with a focus on performance and accessibility."
+              github="https://github.com/Apoorv-032"
+              linkedin="https://www.linkedin.com/in/apoorva-sharma-670b011b1"
+              image={Apoorva}
             />
           </div>
         </section>
-      </AnimatedSection> */}
+      </AnimatedSection>
     </div>
   );
 }
