@@ -72,6 +72,7 @@ function TeamMember({ name, role, intro, github, linkedin, image }) {
         src={image || "/placeholder.svg"}
         alt={name}
         className="w-32 h-32 rounded-full mb-4 object-cover shadow-lg border-2 border-primary"
+        loading="lazy"
       />
       <h3 className="text-xl font-semibold text-primary">{name}</h3>
       <p className="text-muted-foreground mb-2 font-medium">{role}</p>
@@ -176,7 +177,7 @@ export function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            CompeteNest
+            AlogoArena
           </motion.h1>
         </motion.div>
 
@@ -229,11 +230,10 @@ export function HomePage() {
           <div className="flex flex-col justify-center p-6 md:p-8 space-y-2 md:space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold font-mono bg-white bg-clip-text text-transparent relative inline-block">
               <span className="absolute inset-0  opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full h-full -skew-x-12" />
-              Why CompeteNest?
+              Why AlgoArena?
             </h2>
             <p className="text-muted-foreground font-mono text-lg text-white">
-              CompeteNest is a platform to help you improve your coding skills through interactive
-              problems, competitive contests, and community support.
+              AlgoArena is your ultimate destination for honing your coding skills. Whether you're a beginner or an experienced developer, our platform offers a wide range of interactive problems, competitive contests, and a supportive community to help you grow as a coder.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 md:p-8">
@@ -253,8 +253,8 @@ export function HomePage() {
               icon={Medal}
             />
             <FeatureCard
-              title="Community Support"
-              description="Join our community to discuss problems, contests, and more."
+              title="Online Compiler"
+              description="Write, run, and test your code directly in the browser with our integrated online compiler."
               icon={Users}
             />
           </div>
