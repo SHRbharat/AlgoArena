@@ -1,6 +1,8 @@
 import axios from "axios";
 const server_url = import.meta.env.VITE_SERVER_URL;
 
+console.log("server_url:", server_url);
+
 const headers = {
   'Content-Type': 'application/json'
 };

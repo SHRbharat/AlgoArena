@@ -100,3 +100,21 @@ app.put("/callback", async (req, res) => {
 });
 
 export { server, io };
+
+
+
+
+// # CORS Headers
+//     add_header Access-Control-Allow-Origin "https://algo-arena-psi.vercel.app/";
+//     add_header Access-Control-Allow-Credentials true;
+//     add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS, PUT, DELETE';
+//     add_header Access-Control-Allow-Headers 'Origin, Content-Type, Accept, Authorization, X-Requested-With';
+
+// # Preflight
+// if ($request_method = OPTIONS ) {
+//     add_header Access-Control-Allow-Origin "https://algo-arena-psi.vercel.app/";
+//     add_header Access-Control-Allow-Credentials true;
+//     add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS, PUT, DELETE';
+//     add_header Access-Control-Allow-Headers 'Origin, Content-Type, Accept, Authorization, X-Requested-With';
+//     return 204;
+// }
