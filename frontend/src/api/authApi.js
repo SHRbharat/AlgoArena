@@ -1,7 +1,7 @@
 import axios from "axios";
 const server_url = import.meta.env.VITE_SERVER_URL;
 
-console.log("server_url:", server_url);
+
 
 const headers = {
   'Content-Type': 'application/json'
@@ -73,6 +73,7 @@ export const SignUpUser = async (email, password, name) => {
 
 export const ValidateToken = async () => {
   try {
+    console.log("server_url:", server_url);
     const { data } = await axios.get(`${server_url}/api/auth/validate`, {
       withCredentials: true,
       headers
